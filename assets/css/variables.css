@@ -1,0 +1,85 @@
+:root {
+
+    /* ==========================
+       COLORS
+    ========================== */
+
+    --background: #05070D;
+    --background-light: #0D111B;
+    --card: #121826;
+
+    --primary: #8B5CF6;
+    --secondary: #22D3EE;
+
+    --white: #FFFFFF;
+    --text: #D6D9E0;
+    --gray: #8E97A8;
+
+    --success: #22C55E;
+    --danger: #EF4444;
+
+    /* ==========================
+       GRADIENTS
+    ========================== */
+
+    --gradient-primary: linear-gradient(
+        135deg,
+        #8B5CF6,
+        #22D3EE
+    );
+
+    --gradient-card: linear-gradient(
+        180deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.02)
+    );
+
+    /* ==========================
+       FONTS
+    ========================== */
+
+    --font-main: "Inter", sans-serif;
+
+    /* ==========================
+       FONT SIZES
+    ========================== */
+
+    --hero-title: 92px;
+
+    --title: 52px;
+
+    --subtitle: 34px;
+
+    --text-size: 18px;
+
+    --small: 15px;
+
+    /* ==========================
+       SPACING
+    ========================== */
+
+    --section-padding: 140px;
+
+    --container-width: 1350px;
+
+    --radius: 20px;
+
+    /* ==========================
+       SHADOWS
+    ========================== */
+
+    --shadow:
+
+        0 15px 40px rgba(0,0,0,.35);
+
+    --glow:
+
+        0 0 30px rgba(139,92,246,.35);
+
+    /* ==========================
+       TRANSITIONS
+    ========================== */
+
+    --transition: .35s ease;
+
+}

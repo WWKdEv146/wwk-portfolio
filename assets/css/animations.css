@@ -1,0 +1,227 @@
+/* ========================================
+   KEYFRAMES
+======================================== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatEditor {
+    0%,
+    100% {
+        transform: rotate(2deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(1deg) translateY(-14px);
+    }
+}
+
+@keyframes pulseDot {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 14px rgba(34, 211, 238, 0.9);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(0.75);
+        box-shadow: 0 0 24px rgba(34, 211, 238, 1);
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes glowPulse {
+    0%,
+    100% {
+        opacity: 0.35;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.65;
+        transform: scale(1.08);
+    }
+}
+
+/* ========================================
+   HERO LOAD ANIMATIONS
+======================================== */
+
+.badge {
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards;
+    animation-delay: 0.1s;
+}
+
+#home h1 {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.2s;
+}
+
+#home h2 {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.35s;
+}
+
+#home p {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.buttons {
+    opacity: 0;
+    animation: fadeUp 0.8s ease forwards;
+    animation-delay: 0.65s;
+}
+
+.hero-right {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.45s;
+}
+
+/* ========================================
+   EDITOR ANIMATION
+======================================== */
+
+.editor {
+    animation: floatEditor 6s ease-in-out infinite;
+}
+
+.editor:hover {
+    animation-play-state: paused;
+}
+
+.badge::before {
+    animation: pulseDot 2s ease-in-out infinite;
+}
+
+.hero-right::before {
+    animation: glowPulse 5s ease-in-out infinite;
+}
+
+/* ========================================
+   ANIMATED GRADIENTS
+======================================== */
+
+.logo,
+#home h1 {
+    background-size: 200% 200%;
+    animation:
+        fadeUp 0.8s ease forwards,
+        gradientMove 7s ease infinite;
+}
+
+/* ========================================
+   SCROLL REVEAL
+======================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   PROJECT CARD STAGGER
+======================================== */
+
+.project-card.reveal:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.project-card.reveal:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.project-card.reveal:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+/* ========================================
+   NAVBAR SCROLL STATE
+======================================== */
+
+header {
+    transition:
+        background 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+header.scrolled {
+    background: rgba(5, 7, 13, 0.9);
+
+    border-color: rgba(255, 255, 255, 0.09);
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+}
+
+/* ========================================
+   BUTTON CLICK EFFECT
+======================================== */
+
+.buttons a:active,
+#discordButton:active {
+    transform: scale(0.97);
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Advanced Robbery",
+    "description": "Rozbudowany system napadów z pełną walidacją po stronie serwera, cooldownami oraz integracją z OX.",
+    "image": "assets/images/projects/robbery/cover.png",
+    "video": "assets/videos/robbery.mp4",
+    "status": "Completed",
+    "technologies": [
+      "Lua",
+      "OX Inventory",
+      "OX Lib",
+      "NUI"
+    ]
+  },
+  {
+    "title": "CyberHack Tablet",
+    "description": "Nowoczesny tablet hakerski z własnym interfejsem, animacjami i systemem aplikacji.",
+    "image": "assets/images/projects/cyberhack/cover.png",
+    "video": "assets/videos/cyberhack.mp4",
+    "status": "In Progress",
+    "technologies": [
+      "Lua",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ]
+  }
+]

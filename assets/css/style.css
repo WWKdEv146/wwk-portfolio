@@ -1,0 +1,263 @@
+/* ========================================
+   RESET
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--white);
+
+    font-family:var(--font-main);
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--background);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ========================================
+   LISTS
+======================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+    outline:none;
+
+}
+
+/* ========================================
+   IMAGES
+======================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+section{
+
+    width:min(100%, var(--container-width));
+
+    margin:auto;
+
+    padding:var(--section-padding) 40px;
+
+}
+
+/* ========================================
+   TITLES
+======================================== */
+
+h1{
+
+    font-size:var(--hero-title);
+
+    line-height:1;
+
+    font-weight:900;
+
+}
+
+h2{
+
+    font-size:var(--title);
+
+    margin-bottom:25px;
+
+}
+
+h3{
+
+    font-size:30px;
+
+}
+
+/* ========================================
+   TEXT
+======================================== */
+
+p{
+
+    color:var(--text);
+
+    font-size:var(--text-size);
+
+}
+
+/* ========================================
+   BACKGROUND GLOW
+======================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:-200px;
+
+    right:-150px;
+
+    width:700px;
+
+    height:700px;
+
+    background:radial-gradient(
+        circle,
+        rgba(139,92,246,.20),
+        transparent 70%
+    );
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    left:-250px;
+
+    bottom:-200px;
+
+    width:700px;
+
+    height:700px;
+
+    background:radial-gradient(
+        circle,
+        rgba(34,211,238,.12),
+        transparent 70%
+    );
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+/* ========================================
+   TEXT SELECTION
+======================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section[id] {
+    scroll-margin-top: 110px;
+}
+
+::selection{
+    background:#8b5cf6;
+    color:#fff;
+}
+
+img{
+    user-select:none;
+    -webkit-user-drag:none;
+}
+
+html{
+    overflow-x:hidden;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+*{
+    -webkit-tap-highlight-color:transparent;
+}
